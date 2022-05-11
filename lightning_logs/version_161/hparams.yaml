@@ -1,0 +1,51 @@
+act: !!python/name:torch.nn.modules.activation.ReLU ''
+bias: true
+comment: runs
+dataset_name: lagcn
+dataset_type: FullGraphDataset
+debug: false
+disease_idx: null
+disease_neighbor_num: 2
+dropout: 0.4
+drug_idx: null
+drug_neighbor_num: 2
+edge_dropout: 0.2
+embedding_dim: 128
+epochs: 600
+global_test_all_zero: false
+gnn_mode: gcnt
+gpus: 1
+layer_num: 2
+lr: 0.01
+model: DRHGCN
+n_disease: 598
+n_drug: 269
+n_splits: 10
+neighbor_num: 15
+normalize: true
+pos_weight: !!python/object/apply:numpy.core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  F7JlXE9pIUA=
+profiler: false
+seed: 666
+size_u: 269
+size_v: 598
+smooth: false
+split_id: 0
+split_mode: global
+time_stamp: Tue Mar  8 18:07:59 2022
+train_fill_unknown: true
